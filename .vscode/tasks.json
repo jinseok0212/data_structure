@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build Current C File",
+        "type": "shell",
+        "command": "gcc",
+        "args": [
+          "${file}",  // 현재 열려 있는 C 파일
+          "-o",
+          "${fileDirname}/${fileBasenameNoExtension}"  // 같은 폴더에 실행 파일 생성
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": ["$gcc"],
+        "detail": "현재 열려 있는 .c 파일을 컴파일해서 같은 폴더에 실행 파일로 저장함"
+      }
+    ]
+  }
+  

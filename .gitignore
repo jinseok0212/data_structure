@@ -1,0 +1,12 @@
+# macOS 디버깅 심볼 무시
+*.dSYM/
+*.dSYM
+
+# 실행 파일 무시
+word_count*
+test
+
+# macOS 시스템 파일 무시
+.DS_Store
+
+
